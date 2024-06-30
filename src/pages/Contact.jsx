@@ -72,7 +72,7 @@ const Contact = () => {
   };
 
   return (
-    <section className='relative flex lg:flex-row flex-col max-container'>
+    <section className='contact-section relative flex lg:flex-row flex-col max-container'>
       {alert.show && <Alert {...alert} />}
 
       <div className='flex-1 min-w-[50%] flex flex-col'>
@@ -81,15 +81,14 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='w-full flex flex-col gap-7 mt-14'
+          className='contact-form w-full flex flex-col gap-7 mt-14'
         >
           <label className='text-black-500 font-semibold'>
             Name
             <input
               type='text'
               name='name'
-              className='input'
-              placeholder='John'
+              placeholder='Name'
               required
               value={form.name}
               onChange={handleChange}
@@ -102,8 +101,7 @@ const Contact = () => {
             <input
               type='email'
               name='email'
-              className='input'
-              placeholder='John@gmail.com'
+              placeholder='Name@gmail.com'
               required
               value={form.email}
               onChange={handleChange}
@@ -116,8 +114,7 @@ const Contact = () => {
             <textarea
               name='message'
               rows='4'
-              className='textarea'
-              placeholder='Write your thoughts here...'
+              placeholder='Your Message Here...'
               value={form.message}
               onChange={handleChange}
               onFocus={handleFocus}

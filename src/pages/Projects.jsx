@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import { CTA } from "../components";
 import { projects } from "../constants";
 import { arrow } from "../assets/icons";
@@ -16,18 +15,18 @@ const Projects = () => {
 
       <p className='text-slate-500 mt-2 leading-relaxed'>
         I've embarked on numerous projects throughout the years, but these are
-        the ones I hold closest to my heart. 
+        the ones I hold closest to my heart.
       </p>
 
-      <div className='flex flex-wrap my-20 gap-16'>
+      <div className='grid gap-16 my-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
         {projects.map((project) => (
-          <div className='lg:w-[400px] w-full' key={project.name}>
+          <div className='project-card' key={project.name}>
             <div className='block-container w-12 h-12'>
               <div className={`btn-back rounded-xl ${project.theme}`} />
               <div className='btn-front rounded-xl flex justify-center items-center'>
                 <img
                   src={project.iconUrl}
-                  alt='threads'
+                  alt={project.name}
                   className='w-1/2 h-1/2 object-contain'
                 />
               </div>
@@ -43,9 +42,9 @@ const Projects = () => {
                   to={project.link}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='font-semibold text-blue-600'
+                  className='font-semibold text-blue-600 hover:text-blue-800 transition duration-300'
                 >
-                  Live Link
+                  Github Link
                 </Link>
                 <img
                   src={arrow}
