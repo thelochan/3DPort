@@ -36,7 +36,7 @@ const About = () => {
       </div>
 
       <div className='mt-12 flex'>
-        <VerticalTimeline className="custom-vertical-timeline">
+        <VerticalTimeline lineColor='linear-gradient(to bottom, #FF5733, #33FF57, #3357FF, #FF33A8, #FFB833)'>
           {experiences.map((experience, index) => {
             const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33A8', '#FFB833'];
             const color = colors[index % colors.length];
@@ -49,6 +49,9 @@ const About = () => {
                   <div
                     className='flex justify-center items-center w-full h-full icon'
                     style={{ backgroundColor: color, borderRadius: '50%' }}
+                    onClick={() => {
+                      document.getElementById(`experience-${index}`).style.backgroundColor = color;
+                    }}
                   >
                   </div>
                 }
@@ -69,7 +72,7 @@ const About = () => {
                   e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
                 }}
               >
-                <div>
+                <div id={`experience-${index}`}>
                   <h3 className='text-black text-xl font-poppins font-semibold'>
                     {experience.title}
                   </h3>
