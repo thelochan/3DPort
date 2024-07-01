@@ -307,13 +307,10 @@ body.dark-mode .vertical-timeline-element-content {
 }
 
 .footer {
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(135deg, #f0f4f8, #ffffff);
-  padding: 2rem 1rem;
+  background-color: #f8f9fa;
+  padding: 2rem;
   text-align: center;
   color: #333;
-  border-top: 1px solid #e0e0e0;
 }
 
 .footer-container {
@@ -323,15 +320,9 @@ body.dark-mode .vertical-timeline-element-content {
   gap: 1rem;
 }
 
-.footer-container p {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  color: #666;
-}
-
 .social-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
 }
@@ -344,18 +335,6 @@ body.dark-mode .vertical-timeline-element-content {
   transform: scale(1.2);
 }
 
-.social-links a {
-  color: #007bff;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: #0056b3;
-}
-
-.footer-container p strong {
-  color: #007bff;
-}
 
 
 

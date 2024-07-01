@@ -179,7 +179,7 @@ export const projects = [
 
   {
     
-    theme: 'btn-back-yellow',
+    theme: 'btn-back-red',
     name: 'Instagram Clone',
     description: 'Insta Clone SCSS',
     link: 'https://github.com/thelochan/instaclone',
@@ -187,7 +187,7 @@ export const projects = [
 
   {
     
-    theme: 'btn-back-yellow',
+    theme: 'btn-back-orange',
     name: 'Caesar Cipher WASM',
     description: 'WASM based Caesar Cipher project',
     link: 'https://github.com/thelochan/CaesarCipherWASM',
@@ -195,7 +195,7 @@ export const projects = [
 
   {
     
-    theme: 'btn-back-yellow',
+    theme: 'btn-back-black',
     name: 'Gym Meal Prep',
     description: 'Meal prep app with a macro calculator',
     link: 'https://github.com/thelochan/GymMealPrep',
