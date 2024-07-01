@@ -3,16 +3,12 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
-import { CTA, Footer} from '../components';
+import { CTA, Footer } from '../components';
 import { experiences, skills } from '../constants';
 
 import 'react-vertical-timeline-component/style.min.css';
 
 const About = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-
-
   return (
     <section className='max-container'>
       <h1 className='head-text'>
@@ -23,8 +19,6 @@ const About = () => {
         </span>{' '}
         👋
       </h1>
-
-     
 
       <div className='mt-10 flex flex-col gap-3 text-improved'>
         <p className='leading-relaxed text-xl'>
@@ -42,7 +36,7 @@ const About = () => {
       </div>
 
       <div className='mt-12 flex'>
-        <VerticalTimeline>
+        <VerticalTimeline className="custom-vertical-timeline">
           {experiences.map((experience, index) => {
             const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33A8', '#FFB833'];
             const color = colors[index % colors.length];
@@ -50,10 +44,10 @@ const About = () => {
               <VerticalTimelineElement
                 key={experience.company_name}
                 date={experience.date}
-                iconStyle={{ background: color, display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+                iconStyle={{ background: color, display: 'flex', justifyContent: 'center', alignItems: 'center', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}
                 icon={
                   <div
-                    className='flex justify-center items-center w-full h-full'
+                    className='flex justify-center items-center w-full h-full icon'
                     style={{ backgroundColor: color, borderRadius: '50%' }}
                   >
                   </div>
@@ -62,7 +56,17 @@ const About = () => {
                   borderBottom: '18px',
                   borderStyle: 'solid',
                   borderBottomColor: experience.iconBg,
-                  boxShadow: 'none',
+                  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+                  transition: 'transform 0.3s, box-shadow 0.3s',
+                }}
+                contentArrowStyle={{ borderRight: `7px solid ${color}` }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-10px)';
+                  e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
                 }}
               >
                 <div>

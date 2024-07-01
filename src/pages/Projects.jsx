@@ -13,11 +13,6 @@ const Projects = () => {
         </span>
       </h1>
 
-      <p className='text-slate-500 mt-2 leading-relaxed'>
-        I've embarked on numerous projects throughout the years, but these are
-        the ones I hold closest to my heart.
-      </p>
-
       <div className='grid gap-16 my-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
         {projects.map((project) => (
           <div className='project-card' key={project.name}>
