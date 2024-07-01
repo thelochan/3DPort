@@ -47,12 +47,8 @@ export const skills = [
         name: "JavaScript",
         type: "Frontend",
     },
-    {
-        imageUrl: mongodb,
-        name: "MongoDB",
-        type: "Database",
-    },
-  
+   
+
     
     {
         imageUrl: nextjs,
@@ -149,55 +145,46 @@ export const socialLinks = [
 
 export const projects = [
   {
-    
     theme: 'btn-back-blue',
     name: 'Quantum Blockchain',
     description: 'A Python implementation of a Quantum Key Distribution (QKD) protocol that can be used in a blockchain context.',
     link: 'https://github.com/thelochan/QuantumBlockchain',
+    letter: 'Q'
   },
   {
-    
     theme: 'btn-back-green',
     name: 'Dungeon Crawler',
     description: 'A basic Dungeon crawler game',
     link: 'https://github.com/thelochan/typescriptdungeongame',
+    letter: 'D'
   },
   {
-    
     theme: 'btn-back-pink',
     name: 'Mario but worse',
     description: 'Bad rendition of mario using kaboomjs',
     link: 'https://github.com/thelochan/mariobutworse',
+    letter: 'M'
   },
   {
-    
     theme: 'btn-back-yellow',
     name: 'Gym Meal Prep',
     description: 'Meal prep app with a macro calculator',
     link: 'https://github.com/thelochan/GymMealPrep',
+    letter: 'G'
   },
-
   {
-    
     theme: 'btn-back-red',
     name: 'Instagram Clone',
     description: 'Insta Clone SCSS',
     link: 'https://github.com/thelochan/instaclone',
+    letter: 'I'
   },
-
   {
-    
     theme: 'btn-back-orange',
     name: 'Caesar Cipher WASM',
     description: 'WASM based Caesar Cipher project',
     link: 'https://github.com/thelochan/CaesarCipherWASM',
+    letter: 'C'
   },
-
-  {
-    
-    theme: 'btn-back-black',
-    name: 'Gym Meal Prep',
-    description: 'Meal prep app with a macro calculator',
-    link: 'https://github.com/thelochan/GymMealPrep',
-  },
+ 
 ];
