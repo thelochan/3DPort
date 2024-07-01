@@ -6,7 +6,14 @@ const Footer = () => {
     <footer className='footer font-poppins'>
       <div className='footer-container'>
         <p>
-          2024 <strong>Neeraj Lochan Vinod</strong>. Big Baller
+          2024{" "}
+          <a 
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className='font-bold'>
+            Neeraj Lochan Vinod
+          </a>.
         </p>
 
         <div className='social-links'>
@@ -15,7 +22,7 @@ const Footer = () => {
               <img
                 src={link.iconUrl}
                 alt={link.name}
-                className='w-6 h-6 object-contain'
+                className='w-6 h-6 object-contain hover:scale-110 transition-transform'
               />
             </Link>
           ))}

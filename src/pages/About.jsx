@@ -26,17 +26,17 @@ const About = () => {
 
      
 
-      <div className='mt-5 flex flex-col gap-3 text-improved'>
-        <p className='leading-relaxed'>
+      <div className='mt-10 flex flex-col gap-3 text-improved'>
+        <p className='leading-relaxed text-xl'>
           <strong>Software Engineer | Tech Enthusiast</strong>
         </p>
-        <p className='leading-relaxed'>
+        <p className='leading-relaxed text-lg'>
           As a seasoned Software and Web Developer, my journey in technology has been driven by an unwavering passion for innovation and a commitment to excellence. With a Postgraduate Degree in Computer and Information Science from Auckland University of Technology and an undergraduate degree in Electronics and Communication from VIT University, Vellore, I have honed my expertise across a spectrum of tech domains.
         </p>
-        <p className='leading-relaxed'>
+        <p className='leading-relaxed text-lg'>
           Throughout my career, I've embraced roles that challenged and expanded my skill set. From pioneering cutting-edge software solutions to fortifying cybersecurity defenses, I've not only adapted to the evolving tech landscape but also actively shaped it. My technical acumen spans across full-stack development, network engineering, and integrating robust security measures into complex systems.
         </p>
-        <p className='leading-relaxed'>
+        <p className='leading-relaxed text-lg'>
           In the dynamic fields of Artificial Intelligence, Machine Learning, Cloud Computing, and Blockchain, I have contributed to projects that pushed the boundaries of what's possible, delivering tangible improvements in data analysis and system efficiencies. My work has been marked by a 'never say die' attitude, whether it's navigating the competitive currents of the industry or leading my teams through high-stake projects. Beyond my technical contributions, I'm poised to embark on the freelance journey, leveraging my diverse skillset to provide bespoke solutions to global clients. With each project, I bring not just years of experience, but a relentless drive to exceed expectations and a forward-thinking mindset that anticipates the needs of tomorrow.
         </p>
       </div>
